@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/site.css"/>
+	</head>
+	<body>
+	  <header>
+	  	<span class="logo">RBAC Demo</span>
+	  	<span class="right">
+	  		欢迎 admin [管理员]
+	  		<a href="#">注销</a>
+	  	</span>
+	  </header>
+	  <div id="body">
+	  	<nav>
+	  		<ul>
+	  			<li><a class="active" href="#">首页</a></li>
+	  			<li><a href="#">模块管理</a></li>
+	  			<li><a href="#">角色管理</a></li>
+	  			<li><a href="#">角色模块管理</a></li>
+	  			<li><a href="#">用户管理</a></li>
+	  			<li><a href="#">用户角色管理</a></li>
+	  		</ul>
+	  	</nav>
+	    <main>
+	    	<h2>首页</h2>
+	    	打开页面时，授权过滤器对除了公开的模块页面外，进行授权验证。<br />
+			登陆、注册页面任何人可以访问，不属于权限模块。<br />
+			用户管理、角色管理、模块管理、用户角色管理、角色模块管理，五个权限管理页面和其他需要授权的模块，在数据库事先配置好。<br />
+			后台至少由三个部分视图（方法）组成：头部、导航栏、内容。<br />
+			导航栏（方法）读取登陆用户的角色模块并渲染。<br />
+	    </main>
+	  </div>
+	  <footer>
+	  	ASP.NET MVC 5 - RBAC权限管理案例： RBAC Demo
+	  </footer>
+	</body>
+</html>
+
